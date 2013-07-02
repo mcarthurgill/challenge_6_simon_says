@@ -3,8 +3,6 @@ get '/' do
 end
 
 post '/color' do
-
-  #Create and return a JSON object with the random cell and color given below.	
   cell= rand(0..9)
   color= "#" + "%06x" % (rand * 0xffffff)
   random_values = { :cell => cell, :color => color }
